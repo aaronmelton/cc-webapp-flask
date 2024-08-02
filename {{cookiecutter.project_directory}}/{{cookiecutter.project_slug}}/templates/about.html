@@ -1,0 +1,28 @@
+{{ "{" }}% extends 'base.html' %{{ "}" }}
+
+{{ "{" }}% block content %{{ "}" }}
+
+<table style="width:50%" border=0>
+  <tr>
+    <td>Application:</td>
+    <td>{{ "{{" }} app_title {{ "}}" }}</td>
+  </tr>
+  <tr>
+    <td>Description:</td>
+    <td>{{ "{{" }} app_desc {{ "}}" }}</td>
+  </tr>
+  <tr>
+    <td>Version:</td>
+    <td>{{ "{{" }} app_version {{ "}}" }}</td>
+  </tr>
+  <tr>
+    <td>Updated:</td>
+    <td>{{ "{{" }} app_date {{ "}}" }}</td>
+  </tr>
+  <tr>
+    <td>Author:</td>
+    <td>{{ "{{" }} app_author {{ "}}" }}</td>
+  </tr>
+</table>
+
+{{ "{" }}% endblock %{{ "}" }}
