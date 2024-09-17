@@ -1,0 +1,12 @@
+---
+services:
+  {{ cookiecutter.project_slug }}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: {{ cookiecutter.project_slug }}:latest
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL}
+      - LOG_PATH=${LOG_PATH}
+    volumes:
+      - /var/log/{{ cookiecutter.project_slug }}:/app/log:z
